@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author tanghua.zhu mongodb增删接口
+ * @author zth mongodb增删接口
  *
  */
 public interface MongoUploadService {
@@ -29,14 +29,14 @@ public interface MongoUploadService {
 	 *            map 文件的属性值
 	 * @param @param
 	 *            collectionName 所存储的集合
-	 * @author tanghua.zhu
+	 * @author zth
 	 * @date 2017年9月13日 下午3:58:48
 	 */
 	public String createFile(byte[] bytes, Map<String, Object> map, String collectionName) throws Exception;
 
 	/**
 	 * @Description: TODO 重载接口
-	 * @author tanghua.zhu
+	 * @author zth
 	 * @date 2017年9月13日 下午4:01:34
 	 */
 	public String createFile(byte[] bytes, Map<String, Object> map) throws Exception;
@@ -75,7 +75,7 @@ public interface MongoUploadService {
 	* @param @param collectionName
 	* @param @return 返回值为文件在mongodb库里的唯一标示_id
 	* @param @throws Exception
-	* @author tanghua.zhu
+	* @author zth
 	* @date 2017年9月13日 下午5:20:53
 	*/ 
 	public Object findIdByMap(Map<String, Object> map) throws Exception;
